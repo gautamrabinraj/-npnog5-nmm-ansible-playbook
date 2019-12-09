@@ -1,3 +1,2 @@
-vm1-g4.lab.workalaya.net ansible_ssh_user=lab ansible_become_pass=lab
-#vm1-g4 ansible_ssh_user=lab ansible_become_pass=npNOG5nmmvmX-gY ansible_ssh_user=lab ansible_become_pass=lab
-#vm1-g4 ansible_ssh_user=lab ansible_become_pass=lab
+[nagios_hosts]
+vm1-g4.lab.workalaya.net

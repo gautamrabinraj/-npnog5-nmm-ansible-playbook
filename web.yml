@@ -1,6 +1,6 @@
 - hosts:
     - vm1-g4.lab.workalaya.net
-       become: true
+  become: true
   tasks:
     - name: ensure package cache is up to date
       apt: update_cache=yes cache_valid_time=3600
