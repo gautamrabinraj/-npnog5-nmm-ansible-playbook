@@ -1,0 +1,7 @@
+- hosts:
+        - vm1-g4.lab.workalaya.net
+  become: true
+  tasks:
+          - action: apt update_cache=yes cache_valid_time=3600
+          - action: apt pkg=apache2 state=present
+
