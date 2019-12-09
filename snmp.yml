@@ -20,3 +20,19 @@
         regexp: "^mibs :"
         line: "#mibs :"
       tags: snmp_client
+
+    - name: Create .snmp directory in /home/lab/
+      file:
+        path: "/home/lab/.snmp"
+        state: directory
+        mode: 0700
+      become: false
+      tags: snmp_client
+
+    - name: Create .snmp/snmp.conf
+      copy:
+        src: files/snmp/snmp.conf
+        dest: /home/lab/.snmp/snmp.conf
+        mode: 0600
+      become: false
+      tags: snmp_client
